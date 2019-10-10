@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'samples/style.css' %}">
+
+
+{% block content %}
+    <h1 class="center">{{ sample.title }}</h1>
+    {% if sample.end_date %}
+        <h6 class="center">{{ sample.start_date }} - {{ sample.end_date}}</h6>
+    {% else %}
+        <h6 class="center">{{ sample.start_date }} - current</h6>
+    {% endif %}
+    <h3 class="center">{{ sample.subtitle }}</h3>
+    <h6 class="center">{{ sample.abstract }}</h6>
+    <body>
+        <a  href="{{ sample.github_link }}">
+            Check it out on GitHub
+        </a>
+    </body>
+{% endblock content %}
+
+

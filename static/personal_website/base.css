@@ -1,0 +1,45 @@
+/*
+Colors
+dark blue #587389
+greenish #9bb4b1
+beige 	#d8c8b7
+tan #f2ebcd
+red  #db3e51
+*/
+
+/* Add a black background color to the top navigation */
+ul {
+  background-color: #587389;
+  width: 99%;
+  padding: 20px 20px 20px 20px;
+}
+
+/* Style the links inside the navigation bar */
+li {
+    display:inline;
+    text-decoration:none;
+    float:left;
+  color: #f2ebcd;
+  padding: 20px 20px 20px 20px;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+div a:hover {
+  background-color: #db3e51;
+}
+
+/* Add a color to the active/current link */
+div a.active {
+  background-color: #0000ff;
+}
+
+.right {
+    float: right;
+}
+
+footer {
+    color: 999999;
+    text-align: center;
+    width: 100%;
+}

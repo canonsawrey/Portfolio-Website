@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+    <h1 class="center">{{ job.company }} - {{ job.title }}</h1>
+    {% if job.end_date %}
+        <h6 class="center">{{ job.start_date }} - {{ job.end_date}}</h6>
+    {% else %}
+        <h6 class="center">{{ job.start_date }} - current</h6>
+    {% endif %}
+    <h6 class="center">{{ job.abstract }}</h6>
+{% endblock content %}
+
+

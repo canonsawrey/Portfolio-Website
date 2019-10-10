@@ -11,21 +11,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import datetime
-
-
-# Constants that will used by the whole project
-FIRST_NAME = "Canon"
-LAST_NAME = "Sawrey"
-BIRTH_DATE = datetime.date(1997, 12, 27)
-CITY = "Boston"
-STATE = "Massachusetts"
-UNIVERSITY = "Northeastern University"
-MAJOR = "Computer Engineering and Computer Science"
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MASTER_BASE_DIR = os.path.dirname(__file__)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -42,7 +30,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'samples.apps.SamplesConfig',
+    'jobs.apps.JobsConfig',
+    'home.apps.HomeConfig',
+    'projects.apps.ProjectsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

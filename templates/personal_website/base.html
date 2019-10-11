@@ -2,43 +2,55 @@
 <html lang="en">
 
 {% load static %}
-<!--<link rel="stylesheet" href="{% static 'personal_website/base.css' %}"> -->
 
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
 
 <html lang="en">
     <head>
-        <title>Canon Sawrey portfolio</title>
-
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous"/>
+        <title>Canon Sawrey Website</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'personal_website/base.css' %}">
+        <!--Github and Linkedin icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Roboto Black Font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home:home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home:bio' %}">Bio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'projects:index' %}">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'jobs:index' %}">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <header>
+            <nav>
+                <div>
+                    <ul class="nav-list">
+                        <!--Left aligned-->
+                        <li class="left">
+                            <a href="{% url 'home:home' %}">Canon Sawrey</a>
+                        </li>
+                        <li class="left">
+                            <a class="nav-link" href="https://github.com/canonsawrey">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="left">
+                            <a class="nav-link" href="https://linkedin.com/in/canon-sawrey-375b97159/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <!--Right aligned-->
+
+                        <li class="right">
+                            <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
+                        </li>
+                        <li class="right">
+                            <a class="nav-link" href="{% url 'projects:index' %}">My Work</a>
+                        </li>
+                        <li class="right">
+                            <a class="nav-link" href="{% url 'home:about' %}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         {% block content %}
         {% endblock content %}

@@ -5,8 +5,8 @@ def home(request):
     return render(request, 'home/home.html')
 
 
-def bio(request):
-    return render(request, 'home/bio.html')
+def about(request):
+    return render(request, 'home/about.html')
 
 
 def contact(request):

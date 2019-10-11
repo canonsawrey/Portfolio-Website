@@ -1,45 +1,45 @@
 /*
-Colors
-dark blue #587389
-greenish #9bb4b1
-beige 	#d8c8b7
-tan #f2ebcd
-red  #db3e51
-*/
+Nav bar styling
 
-/* Add a black background color to the top navigation */
-ul {
-  background-color: #587389;
-  width: 99%;
-  padding: 20px 20px 20px 20px;
+
+*/
+body {
+    margin: 0;
 }
 
-/* Style the links inside the navigation bar */
+.nav-list {
+   list-style-type: none;
+   margin: 0;
+   padding: 10px;
+   background-color: #145374;
+   overflow: hidden;
+}
+
 li {
     display:inline;
-    text-decoration:none;
-    float:left;
-  color: #f2ebcd;
-  padding: 20px 20px 20px 20px;
-  font-size: 25px;
 }
 
-/* Change the color of links on hover */
-div a:hover {
-  background-color: #db3e51;
+li a {
+    display: inline;
+    color: #E8E8E8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: black;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
 }
 
-/* Add a color to the active/current link */
-div a.active {
-  background-color: #0000ff;
+li a:hover {
+    color: #00334E;
+    background-color: #E8E8E8;
+}
+
+.left {
+    float: left;
+    padding-right: 20px;
 }
 
 .right {
     float: right;
-}
-
-footer {
-    color: 999999;
-    text-align: center;
-    width: 100%;
+    padding-left: 20px;
 }

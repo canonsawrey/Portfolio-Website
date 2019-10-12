@@ -4,7 +4,6 @@
 {% load static %}
 
 
-
 <html lang="en">
     <head>
         <title>Canon Sawrey Website</title>
@@ -19,44 +18,45 @@
     <body>
         <header>
             <nav>
-                <div>
-                    <ul class="nav-list">
+                <div class = "sticky">
+                    <ul class="nav-list" id="nav-list">
                         <!--Left aligned-->
-                        <li class="left">
-                            <a href="{% url 'home:home' %}">Canon Sawrey</a>
+                        <li class="nav-item, left">
+                            <strong><a class="nav-item-text" href="{% url 'home:home' %}">Canon Sawrey</a></strong>
                         </li>
-                        <li class="left">
-                            <a class="nav-link" href="https://github.com/canonsawrey">
+                        <li class="nav-item, left">
+                            <a class="nav-item-text" href="https://github.com/canonsawrey">
                                 <i class="fa fa-github"></i>
                             </a>
                         </li>
-                        <li class="left">
-                            <a class="nav-link" href="https://linkedin.com/in/canon-sawrey-375b97159/">
+                        <li class="nav-item, left">
+                            <a  class="nav-item-text" href="https://linkedin.com/in/canon-sawrey-375b97159/">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
 
                         <!--Right aligned-->
 
-                        <li class="right">
-                            <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
+                        <li class="nav-item, right">
+                            <strong><a  class="nav-item-text" href="{% url 'home:contact' %}">Contact</a></strong>
                         </li>
-                        <li class="right">
-                            <a class="nav-link" href="{% url 'projects:index' %}">My Work</a>
+                        <li class="nav-item, right">
+                            <strong><a  class="nav-item-text" href="{% url 'projects:index' %}">My Work</a></strong>
                         </li>
-                        <li class="right">
-                            <a class="nav-link" href="{% url 'home:about' %}">About</a>
+                        <li class="nav-item, right">
+                            <strong><a  class="nav-item-text" href="{% url 'home:about' %}">About</a></strong>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-
-        {% block content %}
-        {% endblock content %}
+        <div class="page-content">
+            {% block content %}
+            {% endblock content %}
+        </div>
     </body>
 
     <footer>
-        Last revised: Oct. 10, 2019
+        Last revised: Oct. 11, 2019
     </footer>
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
 {% load static %}
-
-
 <html lang="en">
     <head>
+        <!-- Meta stuff -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title -->
         <title>Canon Sawrey Website</title>
         <!-- CSS -->
         <link rel="stylesheet" href="{% static 'personal_website/base.css' %}">
@@ -44,7 +45,7 @@
                             <strong><a  class="nav-item-text" href="{% url 'projects:index' %}">My Work</a></strong>
                         </li>
                         <li class="nav-item, right">
-                            <strong><a  class="nav-item-text" href="{% url 'home:about' %}">About</a></strong>
+                            <strong><a  class="nav-item-text" href="{% url 'home:home' %}#about">About</a></strong>
                         </li>
                     </ul>
                 </div>

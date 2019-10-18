@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'jobs.apps.JobsConfig',
     'home.apps.HomeConfig',
     'projects.apps.ProjectsConfig',
     'django.contrib.admin',

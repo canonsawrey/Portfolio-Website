@@ -1,5 +1,9 @@
-#splash {
+#landing {
     background-color: #f00;
+}
+
+.row {
+    background: #ff0000 !important;
 }
 
 h1 {

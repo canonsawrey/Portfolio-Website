@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<link lang="en">
 {% extends "base.html" %}
 
 {% block content %}
-
     <!-- CSS -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
-
+    <link rel="stylesheet" href="{% static 'home/style.css' %}"/>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="landing">
             <div class="col"></div>
             <div class="col-sm-8">
-                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" >
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" >
                     <h1 class="text-center">Canon Sawrey</h1>
                     <h2 class="text-center">Software Developer</h2>
                     <h3 class="text-center">Boston, MA</h3>

@@ -3,79 +3,94 @@
 
 {% extends "base.html" %}
 
-
 {% block content %}
-    {% load static %}
+
     <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
     <link rel="stylesheet" href="{% static 'home/style.css' %}">
 
-    <div class="splash">
-        <br>
-        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" >
-        <h1 class="splash-text">Canon Sawrey</h1>
-        <h2 class="splash-text">Computer Engineering and Computer Science Student in Boston, MA</h2>
-    </div>
-    <div class="about" id="about">
-        <h1 class="section-header" id="about-header">About</h1>
-        <h3>
-            Background
-        </h3>
-        <p>
-            The son of two engineers, I knew from a young age engineering was a good career option based on my
-            interests and strengths. I have found a great fit as a software developer/engineer while at Northeastern.
-            The biggest reasons I enjoy what I do:
-            <ul>
-                <li><strong>Accessibility: </strong>  Whatever technology I would like to include in a project, it is likely free.
-                </li>
-                <li><strong>Skills Used: </strong> Software development requires a mix of problem solving and creativity.
-                </li>
-                <li><strong>Product Driven: </strong> The greatest metric of your work is the power you give to the end user.
-                </li>
-            </ul>
-        </p>
-        <p>
-                Outside of my professional life, I like to stay active through soccer, swimming, running, and hiking.
-                I also enjoy playing video games and listening to music.
-        </p>
-        <h3>
-            Experience
-        </h3>
-        <p>
-            I am currently employed at Rightpoint Consulting, working as Product Engineering Co-op. I am on the
-            Android team of a mobile security project, primarily writing in Kotlin. I enjoy this role because it
-            allows me to work on both front and back end components of the app, as well as see the code I'm writing
-            directly reflected in the product. The biggest challenge I faced was joining the project six months after it had begun.
-            It was my first time working with a codebase of that magnitude, and I felt a little lost for the first month or two.
-            However, it was a valuable experience that taught me how to acclimate myself to a large piece of work I had not written.
-        </p>
-        <p>
-            I also spend a significant portion of my time working on side projects. I recently published an app,
-            NewsStreams, which was also written for the Android platform in Kotlin. NewsStreams aims to help users find
-            news articles on topics they care about. Users can aggregate stories on certain topics into "Streams"; users
-            can also specify how often they want to see certain topics in their feed, whether they want to see trending, relevant, or
-            recent articles, and the maximum age of the article. For more on NewsStreams or my projects in general, check out
-            the <strong><a class="p-link" href="{% url 'projects:index' %}">projects page</a></strong>
-        </p>
-    </div>
-    <hr>
-    <div class="contact" id="contact">
-        <h1 class="section-header" id="contact-header">Contact</h1>
 
-        <form id="contact-form" action="/" method="post">
-            {% csrf_token %}
-            {% for field in form.fields %}
-            <div class="form-group">
-                {{ field.label_tag }}
-                {{ field }}
-                {% if field.help_text %}
-                    <small class="form-text text-muted">{{ field.help_text }}</small>
-            {% endif %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-sm-8">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" >
+                    <h1 class="text-center">Canon Sawrey</h1>
+                    <h2 class="text-center">Software Developer</h2>
+                    <h3 class="text-center">Boston, MA</h3>
             </div>
-            {% endfor %}
+            <div class="col"></div>
+        </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <br>
+<!--        -->
+<!--        <div class="about" id="about">-->
+<!--            <h1 class="section-header" id="about-header">About</h1>-->
+<!--            <h3>-->
+<!--                Background-->
+<!--            </h3>-->
+<!--            <p>-->
+<!--                The son of two engineers, I knew from a young age engineering was a good career option based on my-->
+<!--                interests and strengths. I have found a great fit as a software developer/engineer while at Northeastern.-->
+<!--                The biggest reasons I enjoy what I do:-->
+<!--                <ul>-->
+<!--                    <li><strong>Accessibility: </strong>  Whatever technology I would like to include in a project, it is likely free.-->
+<!--                    </li>-->
+<!--                    <li><strong>Skills Used: </strong> Software development requires a mix of problem solving and creativity.-->
+<!--                    </li>-->
+<!--                    <li><strong>Product Driven: </strong> The greatest metric of your work is the power you give to the end user.-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                    Outside of my professional life, I like to stay active through soccer, swimming, running, and hiking.-->
+<!--                    I also enjoy playing video games and listening to music.-->
+<!--            </p>-->
+<!--            <h3>-->
+<!--                Experience-->
+<!--            </h3>-->
+<!--            <p>-->
+<!--                I am currently employed at Rightpoint Consulting, working as Product Engineering Co-op. I am on the-->
+<!--                Android team of a mobile security project, primarily writing in Kotlin. I enjoy this role because it-->
+<!--                allows me to work on both front and back end components of the app, as well as see the code I'm writing-->
+<!--                directly reflected in the product. The biggest challenge I faced was joining the project six months after it had begun.-->
+<!--                It was my first time working with a codebase of that magnitude, and I felt a little lost for the first month or two.-->
+<!--                However, it was a valuable experience that taught me how to acclimate myself to a large piece of work I had not written.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                I also spend a significant portion of my time working on side projects. I recently published an app,-->
+<!--                NewsStreams, which was also written for the Android platform in Kotlin. NewsStreams aims to help users find-->
+<!--                news articles on topics they care about. Users can aggregate stories on certain topics into "Streams"; users-->
+<!--                can also specify how often they want to see certain topics in their feed, whether they want to see trending, relevant, or-->
+<!--                recent articles, and the maximum age of the article. For more on NewsStreams or my projects in general, check out-->
+<!--                the <strong><a class="p-link" href="{% url 'projects:index' %}">projects page</a></strong>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="contact" id="contact">-->
+<!--        <h1 class="section-header" id="contact-header">Contact</h1>-->
+
+<!--        <form id="contact-form" action="/" method="post">-->
+<!--            {% csrf_token %}-->
+<!--            {% for field in form.fields %}-->
+<!--            <div class="form-group">-->
+<!--                {{ field.label_tag }}-->
+<!--                {{ field }}-->
+<!--                {% if field.help_text %}-->
+<!--                    <small class="form-text text-muted">{{ field.help_text }}</small>-->
+<!--            {% endif %}-->
+<!--            </div>-->
+<!--            {% endfor %}-->
+
+<!--            <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--        </form>-->
+<!--        <br>-->
     </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 {% endblock content %}
 

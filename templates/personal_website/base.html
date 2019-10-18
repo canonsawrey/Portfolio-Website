@@ -1,60 +1,62 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
     <head>
         <!-- Meta stuff -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Title -->
-        <title>Canon Sawrey Website</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="{% static 'personal_website/base.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Styling stuff -->
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!--Github and Linkedin icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Roboto Black Font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <title>Canon Sawrey Website</title>
+
     </head>
 
     <body>
         <header>
-            <nav>
-                <div class = "sticky">
-                    <ul class="nav-list" id="nav-list">
-                        <!--Left aligned-->
-                        <li class="nav-item, left">
-                            <strong><a class="nav-item-text" href="{% url 'home:home' %}">Canon Sawrey</a></strong>
-                        </li>
-                        <li class="nav-item, left">
-                            <a class="nav-item-text" href="https://github.com/canonsawrey">
+            <nav class="navbar navbar-expand-sm static-top navbar-dark bg-dark">
+                <a class="navbar-brand" href="{% url 'home:home' %}">Canon Sawrey</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                         <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/canonsawrey">
                                 <i class="fa fa-github"></i>
                             </a>
                         </li>
-                        <li class="nav-item, left">
-                            <a  class="nav-item-text" href="https://linkedin.com/in/canon-sawrey-375b97159/">
+                        <li class="nav-item">
+                            <a  class="nav-link" href="https://linkedin.com/in/canon-sawrey-375b97159/">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
-
-                        <!--Right aligned-->
-
-                        <li class="nav-item, right">
-                            <strong><a  class="nav-item-text" href="{% url 'home:contact' %}">Contact</a></strong>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home:home' %}#about">About</a>
                         </li>
-                        <li class="nav-item, right">
-                            <strong><a  class="nav-item-text" href="{% url 'projects:index' %}">My Work</a></strong>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home:home' %}#contact">Contact</a>
                         </li>
-                        <li class="nav-item, right">
-                            <strong><a  class="nav-item-text" href="{% url 'home:home' %}#about">About</a></strong>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'projects:index' %}">My Work</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="page-content">
-            {% block content %}
-            {% endblock content %}
-        </div>
+
+        {% block content %}
+        {% endblock content %}
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     </body>
 
     <footer>

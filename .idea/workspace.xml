@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/static/home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal_website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal_website/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal_website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal_website/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/personal_website/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_website/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +27,7 @@
   <component name="ProjectId" id="1RyuHttyfRpLUNgv3apqA5N0FYA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />

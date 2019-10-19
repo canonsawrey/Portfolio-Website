@@ -3,5 +3,19 @@ footer {
 }
 
 html, body {
-    background-color: #5f6769;
+    background-color: #25274d;
+    font-family: 'Oswald', sans-serif !important;
+    color: #fff;
+}
+
+.navbar-custom .nav-item,
+.navbar-custom .nav-link {
+    color: #e85a4f;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:hover {
+    color: #fff;
 }

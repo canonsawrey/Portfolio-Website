@@ -4,20 +4,16 @@
 
 {% block content %}
 
-    <!-- CSS -->
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+<!-- CSS -->
+{% load static %}
+<link rel="stylesheet" href="{% static 'home/style.css' %}">
+<h1 class="simple-message">
+    Thank you!
+</h1>
 
-    <div>
-        <br>
-        <h1 class="simple-message">
-            Thank you!
-        </h1>
+<h3 class="simple-message">
+    I will be in touch shortly.
+</h3>
 
-        <h3 class="simple-message">
-            I will be in touch shortly.
-        </h3>
-
-    </div>
-    {% endblock content %}
+{% endblock content %}
 

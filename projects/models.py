@@ -11,6 +11,9 @@ class Project(models.Model):
     start_date = models.DateField()
     end_date = models.DateField(null=True, blank=True)
     github_link = models.CharField(null=True, blank=True, max_length=100)
+    platforms = models.CharField(max_length=100)
+    languages = models.CharField(max_length=100)
+    blurb = models.TextField()
 
 
 class DescriptionItem(models.Model):

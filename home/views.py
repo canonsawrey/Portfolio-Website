@@ -6,7 +6,7 @@ from django.core.mail import send_mail
 
 def home(request):
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = ContactForm(data=request.POST)
 
         if form.is_valid():
 

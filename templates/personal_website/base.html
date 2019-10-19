@@ -8,6 +8,8 @@
         <!-- Styling stuff -->
         <!-- Bootstrap  -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
         <!--Github and Linkedin icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         {% load static %}
@@ -19,8 +21,8 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm static-top navbar-dark bg-dark">
-                <a class="navbar-brand" href="{% url 'home:home' %}">Canon Sawrey</a>
+            <nav class="navbar navbar-expand-sm fixed-top navbar-custom">
+                <a class="navbar-brand nav-item" href="{% url 'home:home' %}">Canon Sawrey</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,7 +62,7 @@
         <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     </body>
 
-    <footer>
-        Last revised: Oct. 19, 2019
-    </footer>
+<!--    <footer>-->
+<!--        Last revised: Oct. 19, 2019-->
+<!--    </footer>-->
 </html>

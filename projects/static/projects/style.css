@@ -1,5 +1,37 @@
-.center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+
+#top-spacer {
+    margin-top: 75px;
+    color: #e85a4f;
+
+}
+
+.row {
+    margin: 50px;
+    color: #fff;
+}
+
+.project {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e85a4f;
+    color: #fff;
+}
+
+.arrow {
+    color: #fff;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow:hover {
+    color: #25274d;
+}
+
+.subtitle {
+    color: #464866;
+}
+
+.project-detail {
+    margin-top: 25px;
 }

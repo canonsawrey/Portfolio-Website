@@ -6,6 +6,7 @@
 <!-- CSS -->
 {% load static %}
 <link rel="stylesheet" href="{% static 'home/style.css' %}">
+
 <div class="container">
     <div class="row splash .drop-shadow" id="landing">
         <div class="col"></div>
@@ -69,7 +70,7 @@
             <form method="post">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn" id="submit">Submit</button>
             </form>
         </div>
     </div>

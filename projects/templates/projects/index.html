@@ -1,18 +1,40 @@
 {% extends "base.html" %}
 
-{% load static %}
-
-<link rel="stylesheet"href="{% static 'projects/style.css' %}">
-
 {% block content %}
+
+{% load static %}
+<link rel="stylesheet"href="{% static 'projects/style.css' %}">
+<div class="container">
+    <div class="row" id="top-spacer">
+        <div class="col">
+            <h1 class="text-center">Projects</h1>
+        </div>
+    </div>
     {% if project_list %}
-        <ul>
         {% for project in project_list %}
-            <li><a href="{% url 'projects:detail' project.id %}">{{ project.title }}</a></li>
-        {% endfor %}
-        </ul>
+            <div class="row project drop-shadow">
+                <a class="col" href="{% url 'projects:detail' project.id %}">
+                        <div class="container">
+                            <h1>{{ project.title }}</h1>
+                            {% if project.end_date is None %}
+                                <h6>{{ project.start_date }} - In Progress</h6>
+                            {% else %}
+                                <h6>{{ project.start_date }} - {{ project.end_date }}</h6>
+                            {% endif %}
+                        </div>
+                </a>
+            </div>
+       {% endfor %}
+
     {% else %}
-        <p>No projects are available!</p>
+        <div class="row">
+            <div class="col">
+                <p>No projects are available!</p>
+            </div>
+        </div>
     {% endif %}
+</div>
+
+<link rel="stylesheet" href="{% static 'projects/index.js' %}">
 {% endblock content %}
 

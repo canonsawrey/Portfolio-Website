@@ -1,67 +1,21 @@
-body {
-    margin: 0;
-    color: #00334e;
-    background-color: #e8e8e8;
-    font-family: 'Roboto', sans-serif;
-}
-
-.nav-list {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   background-color: #145374;
-   overflow: hidden;
-}
-
-.nav-item {
-    display:inline;
-}
-
-.nav-item-text {
-    color: #E8E8E8;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-}
-
-.nav-item-text:hover {
-    color: #145374;
-    background-color: #E8E8E8;
-}
-
-.left {
-    float: left;
-}
-
-.left a {
-    margin-right: 10px;
-}
-
-.right {
-    float: right;
-}
-
-.right a {
-    margin-left: 10px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.page-content {
-    margin-top: 70px
-}
-
 footer {
-    background-color: #145374;
-    color: #e8e8e8;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     text-align: center;
+}
+
+html, body {
+    background-color: #25274d;
+    font-family: 'Oswald', sans-serif !important;
+    color: #fff;
+}
+
+.navbar-custom .nav-item,
+.navbar-custom .nav-link {
+    color: #e85a4f;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:hover {
+    color: #fff;
 }

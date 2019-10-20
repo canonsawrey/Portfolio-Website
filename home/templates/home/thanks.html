@@ -3,19 +3,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% load static %}
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
-    <div>
-        <br>
-        <h1 class="simple-message">
-            Thank you!
-        </h1>
 
-        <h3 class="simple-message">
-            I will be in touch shortly.
-        </h3>
+<!-- CSS -->
+{% load static %}
+<link rel="stylesheet" href="{% static 'home/style.css' %}">
+<h1 class="simple-message">
+    Thank you!
+</h1>
 
-    </div>
-    {% endblock content %}
+<h3 class="simple-message">
+    I will be in touch shortly.
+</h3>
+
+{% endblock content %}
 

@@ -11,20 +11,68 @@
         </div>
     </div>
     {% if project_list %}
-        {% for project in project_list %}
-            <div class="row project drop-shadow">
-                <a class="col" href="{% url 'projects:detail' project.id %}">
-                        <div class="container">
-                            <h1>{{ project.title }}</h1>
-                            {% if project.end_date is None %}
-                                <h6>{{ project.start_date }} - In Progress</h6>
-                            {% else %}
-                                <h6>{{ project.start_date }} - {{ project.end_date }}</h6>
-                            {% endif %}
-                        </div>
-                </a>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    {% for project in project_list %}
+                        {% if forloop.counter|add:1|divisibleby:2 %}
+                            <a class="project {% cycle 'bg-red' 'bg-none' %}" href="{% url 'projects:detail' project.id %}">
+                                <div class="container">
+                                    <h1 class="project-detail">{{ project.title }}</h1>
+
+                                    {% if project.on_android is True %}
+                                        <i class="fa fa-android platform project-detail"></i>
+                                    {% endif %}
+                                    {% if project.on_desktop is True %}
+                                        <i class="fa fa-desktop platform project-detail"></i>
+                                    {% endif %}
+                                    {% if project.on_ios is True %}
+                                        <i class="fa fa-apple platform project-detail"></i>
+                                    {% endif %}
+                                    {% if project.on_web is True %}
+                                        <i class="fa fa-globe platform project-detail"></i>
+                                    {% endif %}
+
+                                    {% if project.end_date is None %}
+                                        <h6 class="project-detail">{{ project.start_date }} - In Progress</h6>
+                                    {% else %}
+                                        <h6 class="project-detail">{{ project.start_date }} - {{ project.end_date }}</h6>
+                                    {% endif %}
+                                </div>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    {% for project in project_list %}
+                        {% if forloop.counter|add:2|divisibleby:2 %}
+                            <a class="project {% cycle 'bg-none' 'bg-red' %}" href="{% url 'projects:detail' project.id %}">
+                                 <div class="container">
+                                    <h1 class="project-detail">{{ project.title }}</h1>
+
+                                    {% if project.on_android is True %}
+                                        <i class="fa fa-android platform project-detail"></i>
+                                    {% endif %}
+                                    {% if project.on_desktop is True %}
+                                        <i class="fa fa-desktop platform project-detail"></i>
+                                    {% endif %}
+                                    {% if project.on_ios is True %}
+                                        <i class="fa fa-apple platform project-detail"></i>
+                                    {% endif %}
+                                    {% if project.on_web is True %}
+                                        <i class="fa fa-globe platform project-detail"></i>
+                                    {% endif %}
+
+                                    {% if project.end_date is None %}
+                                        <h6 class="project-detail">{{ project.start_date }} - In Progress</h6>
+                                    {% else %}
+                                        <h6 class="project-detail">{{ project.start_date }} - {{ project.end_date }}</h6>
+                                    {% endif %}
+                                </div>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
-       {% endfor %}
 
     {% else %}
         <div class="row">

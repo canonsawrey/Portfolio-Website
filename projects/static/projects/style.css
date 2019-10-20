@@ -11,10 +11,12 @@
 }
 
 .project {
+    display: block;
     padding: 10px;
     margin: 30px;
     color: #fff;
-    background-color: #e85a4f;
+    transition: box-shadow .3s;
+    transition: margin .3s;
 }
 
 .subtitle {
@@ -22,15 +24,11 @@
 }
 
 .project-detail {
-    margin-top: 35px;
+    margin: 0px;
+    padding: 10px;
 }
 
-.drop-shadow {
-  transition: box-shadow .3s;
-  transition: margin .3s;
-}
-
-.drop-shadow:hover {
+.project:hover {
   box-shadow: -5px 3px 5px 5px rgba(0,0,0,.5);
   margin-left: 35px;
   margin-right: 25px;
@@ -48,4 +46,14 @@ a:link {
 .github-link {
     padding: 30px;
     margin: 30px;
+}
+
+.bg-red {
+    background-color: #e85a4f;
+}
+
+.platform {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

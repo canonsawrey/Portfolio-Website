@@ -8,6 +8,10 @@ html, body {
     color: #fff;
 }
 
+#span {
+    background-color: #ffffff;
+}
+
 .navbar-custom .nav-item,
 .navbar-custom .nav-link {
     color: #e85a4f;

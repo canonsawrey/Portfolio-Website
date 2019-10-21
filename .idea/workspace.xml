@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c435ac2-ee41-466a-b86f-0f984a8eed25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ebextensions/django.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.elasticbeanstalk/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/templates/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/templates/projects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal_website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal_website/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

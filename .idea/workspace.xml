@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c435ac2-ee41-466a-b86f-0f984a8eed25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.ebextensions/django.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/static/projects/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/static/projects/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/templates/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/templates/projects/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/personal_website/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/personal_website/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personal_website/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_website/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

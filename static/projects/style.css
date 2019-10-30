@@ -1,0 +1,59 @@
+
+#top-spacer {
+    margin-top: 75px;
+    color: #fff;
+
+}
+
+.row {
+    margin: 50px;
+    color: #fff;
+}
+
+.project {
+    display: block;
+    padding: 10px;
+    margin: 30px;
+    color: #fff;
+    transition: box-shadow .3s;
+    transition: margin .3s;
+}
+
+.subtitle {
+    color: #464866;
+}
+
+.project-detail {
+    margin: 0px;
+    padding: 10px;
+}
+
+.project:hover {
+  box-shadow: -5px 3px 5px 5px rgba(0,0,0,.5);
+  margin-left: 35px;
+  margin-right: 25px;
+}
+
+.container {
+   color: #fff;
+}
+
+a:link {
+   text-decoration: none;
+   color: white;
+}
+
+.github-link {
+    padding: 30px;
+    margin: 30px;
+}
+
+.bg-red {
+    background-color: #e85a4f;
+}
+
+.platform {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

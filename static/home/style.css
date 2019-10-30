@@ -1,0 +1,39 @@
+img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 75px;
+    border: 15px solid #e85a4f;
+}
+
+.row {
+    padding: 75px;
+    padding: 75px;
+}
+
+.splash {
+    margin-top: 50px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.simple-message {
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+#submit {
+    color: white;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #e85a4f
+}
+
+.red-raised {
+    background-color: #e85a4f;
+}
